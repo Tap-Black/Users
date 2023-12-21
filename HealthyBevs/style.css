@@ -1,6 +1,6 @@
 .Frame{
    left:-2px;
-   top: -2px;
+   top: -10px;
     width: 90px; height: 881px; position: relative; background: #F8FFE5;
 }
 
@@ -9,5 +9,7 @@
 }
 
 .logo{
-    width: 355.17px; height: 243.16px; left: 16px; top: 0px; position: absolute;
+    width: 355.17px; height: 243.16px; left: 24px; top: 0px; position: absolute;
+    clip: rect(0px, 355px, 230px, 0px);
+
 }
