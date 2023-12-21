@@ -9,7 +9,45 @@
 }
 
 .logo{
-    width: 355.17px; height: 243.16px; left: 24px; top: 0px; position: absolute;
+    width: 355.17px; height: 243.16px; left: 34px; top: 0px; position: absolute;
     clip: rect(0px, 355px, 230px, 0px);
 
+}
+
+.Drink_Title{
+    left: 10px; top: 441px; 
+    width: 400px;
+    border-color: red;
+    border-style: dotted;
+    position: absolute; text-align: center; 
+    color: #F8FFE5; font-size: 42px; font-family: Josefin Sans; 
+    font-weight: 700; word-wrap: break-word;
+}
+
+.Drink{
+    width: calc(70.30px*1.22); height: calc(167.28px*1.2); left: 169px; top: 236px; position: absolute;
+}
+
+.Drink_Text{
+    width: 319px; height: 88px; left: 50px; top: 525px; 
+    position: absolute; text-align: center; color: #1E1E1E; 
+    font-size: 16px; font-family: Josefin Sans; font-weight: 700; 
+    word-wrap: break-word;
+}
+
+.Start_Button{
+    width: 259px; height: 50px; left: 339px; top: 767px; 
+    position: absolute; transform: rotate(180deg); 
+    transform-origin: 0 0; background: #587B7F; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    border-radius: 17px;
+}
+
+.Start_Text{
+    left: 85px; top: 730px; 
+    width: 250px;
+    position: absolute; 
+    text-align: center; color: #F8FFE5; font-size: 22px; 
+    font-family: Josefin Sans; font-weight: 700; 
+    word-wrap: break-word; 
 }
