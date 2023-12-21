@@ -15,10 +15,9 @@
 }
 
 .Drink_Title{
-    left: 10px; top: 441px; 
+    left: 13px; top: 441px; 
     width: 400px;
-    border-color: red;
-    border-style: dotted;
+   
     position: absolute; text-align: center; 
     color: #F8FFE5; font-size: 42px; font-family: Josefin Sans; 
     font-weight: 700; word-wrap: break-word;
