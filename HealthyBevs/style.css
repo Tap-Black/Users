@@ -10,13 +10,12 @@
   
 
 body{
-    background-color: #1f1f1f;
     font-family: 'Josefin-Sans', sans-serif;
 }
 
 
 .Frame{
-   left:-15px;
+   left:-5px;
    top: -10px;
     width: 90px; height: 881px; position: relative; background: #F8FFE5;
 }
@@ -32,7 +31,7 @@ body{
 }
 
 .Drink_Title{
-    left: 13px; top: 445px; 
+    left: 13px; top: 441px; 
     width: 400px;
   
     position: absolute; text-align: center; 
