@@ -35,6 +35,25 @@ $(function(){
 
     })
 
+    $('#left').click(function(){
+
+        if (currIndex === 0){
+            currIndex = maxIndex;
+        }
+        else{
+            currIndex--;
+        }
+        $('#title').fadeOut(500,function(){
+            $(this).text(Titles[currIndex]).fadeIn(500);
+        });
+        $('#text').fadeOut(500,function(){
+            $(this).text(Texts[currIndex]).fadeIn(500);
+        });
+
+
+
+    })
+
 
 
 
