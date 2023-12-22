@@ -40,7 +40,9 @@ body{
 }
 
 .Drink{
-    width: calc(70.30px*1.22); height: calc(167.28px*1.2); left: 169px; top: 236px; position: absolute;
+    width: calc(70.30px*1.22); height: calc(167.28px*1.2); left: 169px; top: 236px; 
+    transform: rotate(4deg);
+    position: absolute;
 }
 
 .Drink_Text{
@@ -74,3 +76,13 @@ body{
 
 /* animations */
 
+@keyframes shakeDrink {
+    
+    0%{
+        transfrom: rotate(-45deg)
+    }
+    100%{
+        transfrom: rotate(45deg)
+    }
+    
+}

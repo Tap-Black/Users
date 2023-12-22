@@ -1,3 +1,5 @@
+
+
 var Titles = ["Golden Goodness",
 "Green Glow",
 "Orange Oasis Cleanse",
@@ -31,7 +33,33 @@ $(function(){
             $(this).text(Texts[currIndex]).fadeIn(500);
         });
 
+        var element = document.querySelector('.Drink');
+        var circle = document.querySelector('.Right_Bubble')
+  
+        // Using the animate method
+        element.animate([
+            { transform: 'rotate(-35deg)' },
+            { transform: 'rotate(35deg)' },
+            { transform: 'rotate(-35deg)' },
+            { transform: 'rotate(35deg)' },
+            { transform: 'rotate(-35deg)' },
+            { transform: 'rotate(35deg)' },
+            { transform: 'rotate(4deg)' },
+        ], {
+            duration: 1000, // Animation duration in milliseconds
+            easing: 'ease', // Animation easing function
+            fill: 'forwards' // Animation fill mode
+        });
 
+        circle.animate([
+            { transform: 'scale(1.3)' },
+            { transform: 'scale(1)' },
+
+        ], {
+            duration: 1000, // Animation duration in milliseconds
+            easing: 'ease', // Animation easing function
+            fill: 'forwards' // Animation fill mode
+        });
 
     })
 
@@ -50,7 +78,33 @@ $(function(){
             $(this).text(Texts[currIndex]).fadeIn(500);
         });
 
+        var element = document.querySelector('.Drink');
+        var circle = document.querySelector('.Left_Bubble')
+  
+        // Using the animate method
+        element.animate([
+            { transform: 'rotate(-35deg)' },
+            { transform: 'rotate(35deg)' },
+            { transform: 'rotate(-35deg)' },
+            { transform: 'rotate(35deg)' },
+            { transform: 'rotate(-35deg)' },
+            { transform: 'rotate(35deg)' },
+            { transform: 'rotate(4deg)' },
+        ], {
+            duration: 1000, // Animation duration in milliseconds
+            easing: 'ease', // Animation easing function
+            fill: 'forwards' // Animation fill mode
+        });
 
+        circle.animate([
+            { transform: 'scale(1.3)' },
+            { transform: 'scale(1)' },
+
+        ], {
+            duration: 1000, // Animation duration in milliseconds
+            easing: 'ease', // Animation easing function
+            fill: 'forwards' // Animation fill mode
+        });
 
     })
 
