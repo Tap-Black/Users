@@ -116,21 +116,25 @@ $(function(){
 
 });
 
-var coll = document.getElementsByClassName("Collapse");
+var coll = document.getElementsByClassName("Info");
+var i;
 
-  coll[0].addEventListener("click", function() {
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
     var tab = document.querySelector('.Collapse')
-    var ctext = document.getElementById("CText")
+    var ctext = document.getElementById("MoreInfo")
+    var arrow = document.querySelector(".Info img")
     this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
+    var content = this.previousElementSibling;
+    
+    if (window.getComputedStyle(content).display === "block") {
       content.style.display = "none";
 
-        ctext.textContent = "More Info";
+        
 
       content.animate([
         {height: '100%'},
-        { height: '0%' },
+        {height: '0%' },
 
     ], {
         duration: 1000, // Animation duration in milliseconds
@@ -138,24 +142,16 @@ var coll = document.getElementsByClassName("Collapse");
         fill: 'none' // Animation fill mode
     });
 
-    tab.animate([
-        {top: '1500px'},
-        { top: '530px' },
-
-    ], {
-        duration: 1000, // Animation duration in milliseconds
-        easing: 'ease', // Animation easing function
-        fill: 'forwards' // Animation fill mode
-    });
+    
     
     } else {
       content.style.display = "block";
-     
-      ctext.textContent = "Collapse";
+    
 
       content.animate([
-        {height: '0%'},
-        { height: '100%' },
+        {height: '0'},
+        {height: '100%' }
+
 
     ], {
         duration: 1000, // Animation duration in milliseconds
@@ -163,16 +159,9 @@ var coll = document.getElementsByClassName("Collapse");
         fill: 'none' // Animation fill mode
     });
 
-    tab.animate([
-        {top: '530px'},
-        { top: '1500px' },
-
-    ], {
-        duration: 1000, // Animation duration in milliseconds
-        easing: 'ease', // Animation easing function
-        fill: 'forwards' // Animation fill mode
-    });
+   
     }
 
 
   });
+}
