@@ -115,3 +115,64 @@ $(function(){
 
 
 });
+
+var coll = document.getElementsByClassName("Collapse");
+
+  coll[0].addEventListener("click", function() {
+    var tab = document.querySelector('.Collapse')
+    var ctext = document.getElementById("CText")
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+
+        ctext.textContent = "More Info";
+
+      content.animate([
+        {height: '100%'},
+        { height: '0%' },
+
+    ], {
+        duration: 1000, // Animation duration in milliseconds
+        easing: 'ease', // Animation easing function
+        fill: 'none' // Animation fill mode
+    });
+
+    tab.animate([
+        {top: '1500px'},
+        { top: '530px' },
+
+    ], {
+        duration: 1000, // Animation duration in milliseconds
+        easing: 'ease', // Animation easing function
+        fill: 'forwards' // Animation fill mode
+    });
+    
+    } else {
+      content.style.display = "block";
+     
+      ctext.textContent = "Collapse";
+
+      content.animate([
+        {height: '0%'},
+        { height: '100%' },
+
+    ], {
+        duration: 1000, // Animation duration in milliseconds
+        easing: 'ease', // Animation easing function
+        fill: 'none' // Animation fill mode
+    });
+
+    tab.animate([
+        {top: '530px'},
+        { top: '1500px' },
+
+    ], {
+        duration: 1000, // Animation duration in milliseconds
+        easing: 'ease', // Animation easing function
+        fill: 'forwards' // Animation fill mode
+    });
+    }
+
+
+  });
