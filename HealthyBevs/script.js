@@ -152,6 +152,7 @@ $(function(){
     var Total_Num = document.getElementById("total-num");
     var Total_Price = document.getElementById("total-price");
 
+    var Cash_App = document.querySelector(".CashApp");
     var Pay_Link = document.getElementById("PayNow");
 
 
@@ -174,6 +175,7 @@ $(function(){
 
         if(displayType != "flex"){
             Payment_Screen.style.display = "flex";
+            Cash_App.style.display = "flex";
 
             Payment_Screen.animate([
                 { height: '0px' },
@@ -253,7 +255,7 @@ $(function(){
 
         t_Price = G_Price + O_Price;
         Total_Price.textContent = "$"+t_Price;
-        Pay_Link.href = "https://cash.me/$CamML/"+t_Price+".00/";
+        Pay_Link.href = "https://cash.app/$CamML/"+t_Price+".00/";
 
         
 
