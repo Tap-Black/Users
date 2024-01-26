@@ -201,8 +201,9 @@ $(function(){
         t_Num = Green_Glow+Orange_Oasis;
         Total_Num.textContent = t_Num;
 
-        t_Price = G_Price;
+        t_Price = G_Price + O_Price;
         Total_Price.textContent = "$"+t_Price;
+        Pay_Link.href = "https://cash.me/$CamML/"+t_Price+".00/";
 
         
 
@@ -252,6 +253,7 @@ $(function(){
 
         t_Price = G_Price + O_Price;
         Total_Price.textContent = "$"+t_Price;
+        Pay_Link.href = "https://cash.me/$CamML/"+t_Price+".00/";
 
         
 
@@ -284,6 +286,7 @@ $(function(){
 
         t_Price = G_Price+O_Price;
         Total_Price.textContent = "$"+t_Price;
+        Pay_Link.href = "https://cash.me/$CamML/"+t_Price+".00/";
 
         
 
@@ -330,6 +333,8 @@ $(function(){
 
         t_Price = G_Price+O_Price;
         Total_Price.textContent = "$"+t_Price;
+
+        Pay_Link.href = "https://cash.me/$CamML/"+t_Price+".00/";
 
 
         if(Green_Glow === 0 && Orange_Oasis === 0){
@@ -379,7 +384,8 @@ $(function(){
         Total_Price.textContent = "$"+t_Price;
 
         
-       
+        Pay_Link.href = "https://cash.me/$CamML/"+t_Price+".00/";
+
 
 
     })
@@ -409,7 +415,7 @@ $(function(){
         t_Price = G_Price+O_Price;
         Total_Price.textContent = "$"+t_Price;
 
-        Pay_Link.href = "https://cash.me/$officialmarshall/"+t_Price+".00/";
+        Pay_Link.href = "https://cash.me/$CamML/"+t_Price+".00/";
 
         
        
