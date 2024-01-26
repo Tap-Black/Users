@@ -139,6 +139,13 @@ $(function(){
     var Green_Am = document.getElementById("Green_am");
     var Green_num = document.querySelectorAll(".G-num")
     var Green_price = document.querySelector(".G-price");
+
+    
+    var Orange_Cart = document.getElementById("Orange_Cart");
+    var Orange_Am = document.getElementById("Orange_am");
+    var Orange_num = document.querySelectorAll(".O-num")
+    var Orange_price = document.querySelector(".O-price");
+
     var Payment_Screen = document.getElementById("Payment");
     var Total_Num = document.getElementById("total-num");
     var Total_Price = document.getElementById("total-price");
@@ -163,7 +170,7 @@ $(function(){
 
 
         }
-        
+
         G_Price = Green_Glow*12;
         Green_price.textContent = "$"+(G_Price);
 
@@ -178,7 +185,42 @@ $(function(){
 
     })
 
-    $('.G-left').click(function(){
+    $('#Orange_Cart').click(function(){
+
+        Orange_Oasis  = 1;
+
+       
+
+        Orange_Cart.style.display = "none";
+        Orange_Am.style.display = "flex";
+        Payment_Screen.style.display = "flex";
+
+        
+        for (var i = 0; i < Orange_num.length; i++) {
+            Orange_num[i].textContent = Orange_Oasis;
+
+
+        }
+
+        O_Price = Orange_Oasis*12;
+        Orange_price.textContent = "$"+(O_Price);
+
+        t_Num = Green_Glow+Orange_Oasis;
+        Total_Num.textContent = t_Num;
+
+        t_Price = G_Price + O_Price;
+        Total_Price.textContent = "$"+t_Price;
+
+        
+
+
+    })
+
+
+
+
+
+    $('#G-left').click(function(){
 
         Green_Glow -= 1;
        
@@ -198,7 +240,7 @@ $(function(){
         t_Num = Green_Glow+Orange_Oasis;
         Total_Num.textContent = t_Num;
 
-        t_Price = G_Price;
+        t_Price = G_Price+O_Price;
         Total_Price.textContent = "$"+t_Price;
 
         
@@ -217,7 +259,48 @@ $(function(){
 
     })
 
-    $('.G-right').click(function(){
+
+    $('#O-left').click(function(){
+
+        Orange_Oasis -= 1;
+       
+        if(Orange_Oasis === 0){
+            Orange_Cart.style.display = "flex";
+            Orange_Am.style.display = "none";
+        }
+
+        for (var i = 0; i < Orange_num.length; i++) {
+            Orange_num[i].textContent = Orange_Oasis;
+       
+        }
+
+        O_Price = Orange_Oasis*12;
+        Orange_price.textContent = "$"+(O_Price);
+
+        t_Num = Green_Glow+Orange_Oasis;
+        Total_Num.textContent = t_Num;
+
+        t_Price = G_Price+O_Price;
+        Total_Price.textContent = "$"+t_Price;
+
+        
+
+
+
+
+
+        if(Green_Glow === 0 && Orange_Oasis === 0){
+            Payment_Screen.style.display = "none";
+            
+        }   
+
+       
+
+
+    })
+
+
+    $('#G-right').click(function(){
 
         Green_Glow += 1;
         
@@ -237,7 +320,7 @@ $(function(){
         t_Num = Green_Glow+Orange_Oasis;
         Total_Num.textContent = t_Num;
 
-        t_Price = G_Price;
+        t_Price = G_Price+O_Price;
         Total_Price.textContent = "$"+t_Price;
 
         
@@ -248,6 +331,34 @@ $(function(){
 
 
 
+    $('#O-right').click(function(){
+
+        Orange_Oasis += 1;
+        
+        for (var i = 0; i < Orange_num.length; i++) {
+            Orange_num[i].textContent = Orange_Oasis;
+
+
+        }
+
+        O_Price = Orange_Oasis*12;
+        
+        Orange_price.textContent = "$"+(O_Price);
+        
+        O_Price = Orange_Oasis*12;
+        Orange_price.textContent = "$"+(O_Price);
+
+        t_Num = Green_Glow+Orange_Oasis;
+        Total_Num.textContent = t_Num;
+
+        t_Price = G_Price+O_Price;
+        Total_Price.textContent = "$"+t_Price;
+
+        
+       
+
+
+    })
 
 
 

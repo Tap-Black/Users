@@ -207,18 +207,24 @@ h1{
 #Green_am{
     display:none;
 }
+#Orange_Cart{
+    display:flex;
+}
+#Orange_am{
+    display:none;
+}
 
-.G-left{
+.D-left{
     transform: rotate(90deg);
     height: 20px;
     background-color: white;
 }
-.G-right{
+.D-right{
     height: 20px;
     transform: rotate(-90deg);
     background-color: white;
 }
-.G-am{
+.D-am{
     display: flex;
     align-items: center;
     justify-content: center;
