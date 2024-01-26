@@ -6,6 +6,13 @@ var Titles = ["Golden Goodness",
 "Pine-Apple"
 ]
 
+var Colors = ["yellow",
+"#66690E",
+"#F39354",
+"yellow"
+]
+
+
 var Texts = [
     "A tropical blend of pineapple, mango, and lemon, offering a refreshing burst of immune-boosting vitamin C, antioxidants, and hydration.",
     "It's green juice bro. Drink at your own risk",
@@ -15,6 +22,9 @@ var Texts = [
 ]
 var currIndex = 0;
 var maxIndex = Titles.length - 1
+
+var Orange_Oasis = 0;
+var Green_Glow = 0;
 
 $(function(){
 
@@ -73,6 +83,13 @@ $(function(){
         }
         $('#title').fadeOut(500,function(){
             $(this).text(Titles[currIndex]).fadeIn(500);
+            /*
+            var title = document.getElementById('title');
+             title.style.color = Colors[currIndex];
+
+            */
+
+            
         });
         $('#text').fadeOut(500,function(){
             $(this).text(Texts[currIndex]).fadeIn(500);
@@ -80,7 +97,8 @@ $(function(){
 
         var element = document.querySelector('.Drink');
         var circle = document.querySelector('.Left_Bubble')
-  
+
+        
         // Using the animate method
         element.animate([
             { transform: 'rotate(-35deg)' },
