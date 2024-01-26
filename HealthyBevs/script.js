@@ -228,6 +228,8 @@ $(function(){
 
         if(displayType != "flex"){
             Payment_Screen.style.display = "flex";
+            Cash_App.style.display = "flex";
+
 
             Payment_Screen.animate([
                 { height: '0px' },
@@ -293,6 +295,8 @@ $(function(){
         
 
         if(Green_Glow === 0 && Orange_Oasis === 0){
+            Cash_App.style.display = "none";
+
             Payment_Screen.animate([
                 { height: '300px' },
                 { height: '0px' },
@@ -304,6 +308,7 @@ $(function(){
 
             }).finished.then(function() {
                 Payment_Screen.style.display = "none";
+
             });
         }   
 
@@ -340,7 +345,8 @@ $(function(){
 
 
         if(Green_Glow === 0 && Orange_Oasis === 0){
-            
+            Cash_App.style.display = "none";
+
             Payment_Screen.animate([
                 { height: '300px' },
                 { height: '0px' },
@@ -352,6 +358,7 @@ $(function(){
 
             }).finished.then(function() {
                 Payment_Screen.style.display = "none";
+
             });
 
         }   
