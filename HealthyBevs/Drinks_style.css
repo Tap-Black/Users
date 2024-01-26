@@ -129,6 +129,7 @@ h1{
 .D1_Content{
     display: none;
     width: 90%;
+    overflow: hidden;
 }
 .Info{
     

@@ -453,21 +453,15 @@ for (i = 0; i < coll.length; i++) {
     var arrow = document.querySelector(".Info img")
     this.classList.toggle("active");
     var content = this.previousElementSibling;
+    var id = content.id;
+    var contentID = document.getElementById(id);
     
-    if (window.getComputedStyle(content).display === "block") {
-      content.style.display = "none";
+    
+    if (window.getComputedStyle(content).display === "block") {        
+        content.style.display = "none";
+      
+    
 
-        
-
-      content.animate([
-        {height: '100%'},
-        {height: '0%' },
-
-    ], {
-        duration: 1000, // Animation duration in milliseconds
-        easing: 'ease', // Animation easing function
-        fill: 'none' // Animation fill mode
-    });
 
     
     
@@ -483,7 +477,7 @@ for (i = 0; i < coll.length; i++) {
     ], {
         duration: 1000, // Animation duration in milliseconds
         easing: 'ease', // Animation easing function
-        fill: 'none' // Animation fill mode
+        fill: 'forwards' // Animation fill mode
     });
 
    
