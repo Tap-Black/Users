@@ -152,6 +152,8 @@ $(function(){
     var Total_Num = document.getElementById("total-num");
     var Total_Price = document.getElementById("total-price");
 
+    var Pay_Link = document.getElementById("PayNow");
+
 
 
 
@@ -164,8 +166,28 @@ $(function(){
 
         Green_Cart.style.display = "none";
         Green_Am.style.display = "flex";
-        Payment_Screen.style.display = "flex";
 
+        var paymentStyle = window.getComputedStyle(Payment_Screen);
+
+        var displayType = paymentStyle.getPropertyValue('display');
+    
+
+        if(displayType != "flex"){
+            Payment_Screen.style.display = "flex";
+
+            Payment_Screen.animate([
+                { height: '0px' },
+                { height: '300px' },
+    
+            ], {
+                duration: 500, // Animation duration in milliseconds
+                easing: 'ease', // Animation easing function
+                fill: 'forwards' // Animation fill mode
+            });
+    
+        }
+
+        
         
         for (var i = 0; i < Green_num.length; i++) {
             Green_num[i].textContent = Green_Glow;
@@ -195,8 +217,26 @@ $(function(){
 
         Orange_Cart.style.display = "none";
         Orange_Am.style.display = "flex";
-        Payment_Screen.style.display = "flex";
 
+        var paymentStyle = window.getComputedStyle(Payment_Screen);
+
+        var displayType = paymentStyle.getPropertyValue('display');
+    
+
+        if(displayType != "flex"){
+            Payment_Screen.style.display = "flex";
+
+            Payment_Screen.animate([
+                { height: '0px' },
+                { height: '300px' },
+    
+            ], {
+                duration: 500, // Animation duration in milliseconds
+                easing: 'ease', // Animation easing function
+                fill: 'forwards' // Animation fill mode
+            });
+    
+        }
         
         for (var i = 0; i < Orange_num.length; i++) {
             Orange_num[i].textContent = Orange_Oasis;
@@ -248,8 +288,18 @@ $(function(){
         
 
         if(Green_Glow === 0 && Orange_Oasis === 0){
-            Payment_Screen.style.display = "none";
-            
+            Payment_Screen.animate([
+                { height: '300px' },
+                { height: '0px' },
+
+            ], {
+                duration: 500, // Animation duration in milliseconds
+                easing: 'ease', // Animation easing function
+                fill: 'forwards', // Animation fill mode
+
+            }).finished.then(function() {
+                Payment_Screen.style.display = "none";
+            });
         }   
 
        
@@ -281,11 +331,22 @@ $(function(){
         t_Price = G_Price+O_Price;
         Total_Price.textContent = "$"+t_Price;
 
-        console.log(Green_Glow);
 
         if(Green_Glow === 0 && Orange_Oasis === 0){
-            Payment_Screen.style.display = "none";
             
+            Payment_Screen.animate([
+                { height: '300px' },
+                { height: '0px' },
+
+            ], {
+                duration: 500, // Animation duration in milliseconds
+                easing: 'ease', // Animation easing function
+                fill: 'forwards', // Animation fill mode
+
+            }).finished.then(function() {
+                Payment_Screen.style.display = "none";
+            });
+
         }   
 
        
@@ -347,6 +408,8 @@ $(function(){
 
         t_Price = G_Price+O_Price;
         Total_Price.textContent = "$"+t_Price;
+
+        Pay_Link.href = "https://cash.me/$officialmarshall/"+t_Price+".00/";
 
         
        
