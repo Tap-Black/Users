@@ -131,6 +131,8 @@ $(function(){
     var Orange_Oasis = 0;
     var Green_Glow = 0;
     var G_Price = Green_Glow *12;
+    var O_Price = Orange_Oasis *12;
+    
     var t_Price = 0;
     var t_Num = 0;
     
@@ -245,10 +247,6 @@ $(function(){
 
         
 
-
-
-
-
         if(Green_Glow === 0 && Orange_Oasis === 0){
             Payment_Screen.style.display = "none";
             
@@ -283,11 +281,7 @@ $(function(){
         t_Price = G_Price+O_Price;
         Total_Price.textContent = "$"+t_Price;
 
-        
-
-
-
-
+        console.log(Green_Glow);
 
         if(Green_Glow === 0 && Orange_Oasis === 0){
             Payment_Screen.style.display = "none";
