@@ -23,8 +23,6 @@ var Texts = [
 var currIndex = 0;
 var maxIndex = Titles.length - 1
 
-var Orange_Oasis = 0;
-var Green_Glow = 0;
 
 $(function(){
 
@@ -125,6 +123,134 @@ $(function(){
         });
 
     })
+
+
+
+
+
+    var Orange_Oasis = 0;
+    var Green_Glow = 0;
+    var G_Price = Green_Glow *12;
+    var t_Price = 0;
+    var t_Num = 0;
+    
+
+    var Green_Cart = document.getElementById("Green_Cart");
+    var Green_Am = document.getElementById("Green_am");
+    var Green_num = document.querySelectorAll(".G-num")
+    var Green_price = document.querySelector(".G-price");
+    var Payment_Screen = document.getElementById("Payment");
+    var Total_Num = document.getElementById("total-num");
+    var Total_Price = document.getElementById("total-price");
+
+
+
+
+
+    $('#Green_Cart').click(function(){
+
+        Green_Glow  = 1;
+
+       
+
+        Green_Cart.style.display = "none";
+        Green_Am.style.display = "flex";
+        Payment_Screen.style.display = "flex";
+
+        
+        for (var i = 0; i < Green_num.length; i++) {
+            Green_num[i].textContent = Green_Glow;
+
+
+        }
+        
+        G_Price = Green_Glow*12;
+        Green_price.textContent = "$"+(G_Price);
+
+        t_Num = Green_Glow+Orange_Oasis;
+        Total_Num.textContent = t_Num;
+
+        t_Price = G_Price;
+        Total_Price.textContent = "$"+t_Price;
+
+        
+
+
+    })
+
+    $('.G-left').click(function(){
+
+        Green_Glow -= 1;
+       
+        if(Green_Glow === 0){
+            Green_Cart.style.display = "flex";
+            Green_Am.style.display = "none";
+        }
+
+        for (var i = 0; i < Green_num.length; i++) {
+            Green_num[i].textContent = Green_Glow;
+       
+        }
+
+        G_Price = Green_Glow*12;
+        Green_price.textContent = "$"+(G_Price);
+
+        t_Num = Green_Glow+Orange_Oasis;
+        Total_Num.textContent = t_Num;
+
+        t_Price = G_Price;
+        Total_Price.textContent = "$"+t_Price;
+
+        
+
+
+
+
+
+        if(Green_Glow === 0 && Orange_Oasis === 0){
+            Payment_Screen.style.display = "none";
+            
+        }   
+
+       
+
+
+    })
+
+    $('.G-right').click(function(){
+
+        Green_Glow += 1;
+        
+        for (var i = 0; i < Green_num.length; i++) {
+            Green_num[i].textContent = Green_Glow;
+
+
+        }
+
+        G_Price = Green_Glow*12;
+        
+        Green_price.textContent = "$"+(G_Price);
+        
+        G_Price = Green_Glow*12;
+        Green_price.textContent = "$"+(G_Price);
+
+        t_Num = Green_Glow+Orange_Oasis;
+        Total_Num.textContent = t_Num;
+
+        t_Price = G_Price;
+        Total_Price.textContent = "$"+t_Price;
+
+        
+       
+
+
+    })
+
+
+
+
+
+
 
 
 

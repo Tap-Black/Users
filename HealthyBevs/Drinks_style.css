@@ -10,6 +10,7 @@
 
 body{
     font-family: 'Josefin-Sans', sans-serif;
+    /*background: #F8FFE5; */
 }
 .Frame{
     margin-left: -10px;
@@ -200,6 +201,51 @@ h1{
     letter-spacing: 1px; 
 }
 
+#Green_Cart{
+    display:flex;
+}
+#Green_am{
+    display:none;
+}
+
+.G-left{
+    transform: rotate(90deg);
+    height: 20px;
+    background-color: white;
+}
+.G-right{
+    height: 20px;
+    transform: rotate(-90deg);
+    background-color: white;
+}
+.G-am{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: dashed;
+    border-color: #587B7F;
+    border-width: 2px;
+
+    border-top: 0px;
+    border-bottom: 0px;
+    width: 35%;
+    height: 31px;
+}
+
+.Amount{
+    background-color: white;
+    border-style: solid;
+    border-color: #587B7F;
+    color: #587B7F;
+    border-width: 1px;
+    border-radius: 7px; 
+    width: 126px; 
+    height: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
 .line2{
     width:40px;
     height: 2px;
@@ -210,18 +256,57 @@ h1{
     color: #66690E;
 }
 
-.content{
-    width: 371px; left: 9px; top: 544px; position: absolute;
-    overflow: hidden; display: none;
-    transition:all 4s
+.Payment{
+    width: 80%;
+    height: 300px;
+    border-radius: 10px;
+    background-color: #F8FFE5;
+    border-style:dashed;
+    border-color: #587B7F;
+    border-width: 1px;
+    display:none;
+    flex-direction: column;
+    color: #587B7F;
+    margin-bottom: 10%;
+
 }
 
-.Collapse{
-    left: 100px; top: 530px; position: absolute; text-align: right; 
-    color: #587B7F; font-size: 16px; font-weight: 400; 
-    word-wrap: break-word
+.headers{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    
 
 }
+.headers h4{
+    text-align: right;
+    font-weight: 400;
+}
+#D_Name{
+    width: 50%;
+    text-align: left;
+}
+
+#head1 h4{
+    font-weight: 700;
+}
+
+
+#total{
+height: 40%;
+display: flex;
+align-items: end;
+
+}
+
+
+#total h4{
+    color: black;
+    font-weight: 700;
+}
+
+
 
 
 
