@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('Assets/Inter-Regular.woff2') format('woff2'),
+         url('Assets/Inter-Regular.woff') format('woff');
+  }
+  
+ 
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    src: url('Assets/Inter-Bold.woff2') format('woff2'),
+         url('Assets/Inter-Bold.woff') format('woff');
+  }
+
+html{
+    background-color: #1f1f1f;
+    font-family: 'Inter', sans-serif;
+}
+
+
+.Frame{
+    margin-left: -10px;
+    top: -10px;
+    width: 420px; 
+    height: 844px; 
+    background: linear-gradient(180deg, #2E2D4E 34%, #A6B2DD 100%);    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Title{
+    margin-top: 10%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.Title h3{
+    color: white;
+    letter-spacing: 1.89px;
+    font-weight: 300;
+    margin:0;
+    margin-bottom:-20px;
+}
+.Title h1{
+    padding-top: 0px;
+    text-align: center;
+}
+
+#tap{
+    color: #A6B2DD; font-weight: 500;
+}
+#black{
+    color: black;
+    font-weight: 900;
+
+}
