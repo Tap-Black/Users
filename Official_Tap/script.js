@@ -14,7 +14,7 @@ var Headers = [
 ]
 
 var Texts = [
-    "ahfadskjflajfklajfsa",
+    "The perfect way to keep in touch with clients, mentors, or new friends.",
     "adsjfilkajfskaljfaljf",
     "Conadsfjlasdkjnect",
     "adsfafas"
