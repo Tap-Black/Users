@@ -135,7 +135,7 @@ var currIndex = 0;
             currIndex++;
             header.textContent = Headers[currIndex];
             text.textContent = Texts[currIndex];
-        },14 500);
+        },14500);
     
         
 
