@@ -16,7 +16,7 @@
   }
 
 html{
-    background-color: #1f1f1f;
+    background: linear-gradient(180deg, #2E2D4E 34%, #A6B2DD 100%);    display:flex;
     font-family: 'Inter', sans-serif;
 }
 
@@ -60,8 +60,11 @@ html{
 
 .Animation_Block{
     height: 40%;
-    border-style: dashed;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .Card{
@@ -72,3 +75,49 @@ html{
     border-radius: 16px
 
 }
+
+.Main_Text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Main_Text h2{
+    font-size: 40px;
+    text-align: center;
+    
+    background: -webkit-linear-gradient(#1f1f1f, #1f1f1f00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; color: rgba(0, 0, 0, 0); -webkit-text-stroke: 1px black;
+    margin-bottom: 0px;
+}
+
+.Main_Text h4{
+    color:white;
+    font-weight: 400;
+    letter-spacing: 1.89px;
+    font-size: 18px;
+    text-align: center;
+    width: 90%;
+}
+
+.Order-Box{
+    width: 245px; 
+    height: 45px; 
+    background: #027BCE; 
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Order-Box h3{
+    color:white;
+    font-weight: 400;
+    letter-spacing: 1.89px;
+    font-size: 18px;
+    text-align: center;
+}
+
