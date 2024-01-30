@@ -388,12 +388,8 @@ html{
 .circle{
     opacity: 0;
     animation: circle 4s normal forwards;
-    animation-delay: 9.5                                    \          \                                    
-          
-           
-        \                    ;
-                                                                      
-}
-
+    animation-delay: 9.5s;                          
+}                                         
+                  
 
 

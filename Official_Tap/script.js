@@ -10,7 +10,7 @@ var Headers = [
     "One Card",
     "Tap",
     "Connect",
-    "Go"
+    "Endless Possibilites"
 ]
 
 var Texts = [
