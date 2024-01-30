@@ -337,7 +337,7 @@ html{
 
 
 
-/*  Animations                                                                                         
+/*  Animations         */                                                                                  
 
 .Title{
     animation: FadeIn 4s normal; 
@@ -387,11 +387,7 @@ html{
     animation-delay: 9.5s;                          
 }                                         
          
-*/  
 
-#Em{
-    opacity: 100;
-}
 
 
          
