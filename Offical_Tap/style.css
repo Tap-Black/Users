@@ -8,9 +8,9 @@
   
  
   @font-face {
-    font-family: 'Inter';
+    font-family: 'Inter-bold';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 900;
     src: url('Assets/Inter-Bold.woff2') format('woff2'),
          url('Assets/Inter-Bold.woff') format('woff');
   }
@@ -51,11 +51,11 @@ html{
 }
 
 #tap{
-    color: #A6B2DD; font-weight: 500;
+    color: #A6B2DD; font-weight: 300;
 }
 #black{
     color: black;
-    font-weight: 900;
+    font-family: 'Inter-bold', sans-serif;
 
 }
 
