@@ -26,7 +26,13 @@ var currIndex = 0;
  
 
  document.addEventListener('DOMContentLoaded', function() {
+
     
+
+
+    
+    
+
     header.textContent= Headers[currIndex];
     text.textContent= Texts[currIndex];
 
@@ -138,5 +144,111 @@ var currIndex = 0;
         },14500);
     
         
+
+});
+
+
+var T_index = 1;
+var Designs = document.getElementsByClassName("Design_img");
+
+
+function changeDot(index) {
+   
+    switch(index){
+        case 1:
+        D1.style.backgroundColor = "#C2E812";
+        D2.style.backgroundColor = "#1F1f1f";
+        D3.style.backgroundColor = "#1F1f1f";
+        D4.style.backgroundColor = "#1F1f1f";
+
+        break;
+
+        case 2:
+            D1.style.backgroundColor = "#1f1f1f";
+            D2.style.backgroundColor = "#C2E812";
+            D3.style.backgroundColor = "#1F1f1f";
+            D4.style.backgroundColor = "#1F1f1f";
+            break;
+
+        case 3:
+            D1.style.backgroundColor = "#1f1f1f";
+            D2.style.backgroundColor = "#1f1f1f";
+            D3.style.backgroundColor = "#C2E812";
+            D4.style.backgroundColor = "#1F1f1f";
+        break;
+
+        case 4:
+            D1.style.backgroundColor = "#1f1f1f";
+            D2.style.backgroundColor = "#1f1f1f";
+            D3.style.backgroundColor = "#1f1f1f";
+            D4.style.backgroundColor = "#C2E812";
+        break;
+
+
+
+
+    }
+
+
+
+}
+
+
+
+
+$(function(){
+
+    $('#right').click(function(){
+
+        
+
+        if(T_index === Designs.length){
+            T_index = 1;
+        }
+        else{
+            T_index++;
+        }
+
+        for(var i = 0; i < Designs.length; i++){
+            Designs[i].style.display = "none";
+            
+        }
+
+    
+
+
+      
+        changeDot(T_index);
+        Designs[T_index-1].style.display = "block";
+
+        
+
+    });
+
+
+    $('#left').click(function(){
+     
+
+        if(T_index === 1){
+            T_index = Designs.length;
+        }
+        else{
+            T_index--;
+        }
+
+        for(var i = 0; i < Designs.length; i++){
+            Designs[i].style.display = "none";
+            
+        }
+
+        Designs[T_index-1].style.display = "block";
+        changeDot(T_index);
+        
+
+
+
+    });
+
+
 
 });

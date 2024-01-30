@@ -391,3 +391,95 @@ html{
          
 
 
+
+
+
+/*      ORDER PAGE      */
+
+.Choose h1{
+    font-weight: 500;
+    letter-spacing: 1.89px;
+    color: #A6B2DD;
+    margin-bottom: 10%;
+}
+
+.Border{
+    height: 70%;
+    width: 80%;
+    background-color: #1f1f1f;
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 40px 40px #1f1f1f;
+    display: flex;
+    flex-direction: row;
+    gap: 66%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+
+}
+
+.Border h6{
+    font-size: 48px;
+    color: #C2E812;
+    font-weight: 200;
+    cursor: pointer;
+    position: absolute;
+}
+
+.Border img{
+    width: 100%;
+}
+
+#left{
+    margin-left: -21%;
+}
+#right{
+    margin-right: -21%;
+}
+
+
+
+.Pick{
+    margin-top: -5%;
+}
+
+.Designs{
+    height: 500px;
+    width: 250px;
+    border-radius: 38px;
+    border: 8px;
+    border-style: solid;
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+   
+   
+  
+    
+}
+
+.Design_img{
+    width: 100%;
+    display: none;
+}
+
+
+.D_Notch{
+    width:125px;
+    height: 22px;
+    background-color: black;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    margin-top: -1px;
+    position:absolute;
+
+    
+}
+
+#design1{
+    display: block;
+}
+
