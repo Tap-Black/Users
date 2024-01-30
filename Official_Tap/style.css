@@ -415,6 +415,7 @@ html{
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    position:relative;
 
 
 }
@@ -432,10 +433,10 @@ html{
 }
 
 #left{
-    margin-left: -21%;
+    left: 2px;
 }
 #right{
-    margin-right: -21%;
+ right: 2px;
 }
 
 
@@ -483,3 +484,7 @@ html{
     display: block;
 }
 
+
+.Secondary{
+    display: none;
+}

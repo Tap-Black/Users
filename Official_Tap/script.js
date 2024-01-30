@@ -193,10 +193,66 @@ function changeDot(index) {
 
 }
 
+function fadeAway(variable){
+
+    variable.animate([
+        { opacity: '100' },
+        { opacity: '0' },
+
+    ], {
+        duration: 1000, // Animation duration in milliseconds
+        easing: 'ease', // Animation easing function
+        fill: 'forwards', // Animation fill mode
+
+    }).finished.then(function() {
+        variable.style.display = "none";
+
+    });
+
+}
+
+function fadeIn(variable){
+
+    variable.animate([
+        { opacity: '0' },
+        { opacity: '100' },
+
+    ], {
+        duration: 1000, // Animation duration in milliseconds
+        easing: 'ease', // Animation easing function
+        fill: 'forwards', // Animation fill mode
+
+    }).finished.then(function() {
+        variable.style.display = "block";
+
+    });
+
+}
+
+
 
 
 
 $(function(){
+
+    $('.Order-Box').click(function(){
+
+        var DesignPick = Designs[T_index-1].getAttribute('id');
+        console.log(DesignPick);
+
+        var Form = document.querySelector(".Secondary");
+        var Border = document.querySelector(".Border");
+        var Dots = document.querySelector(".Dots");
+        var OrderButton = document.querySelector(".Pick");
+
+        fadeAway(Border);
+        fadeAway(Dots);
+        fadeAway(OrderButton);
+
+        fadeIn(Form);
+    
+
+    });
 
     $('#right').click(function(){
 
