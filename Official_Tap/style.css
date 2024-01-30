@@ -42,6 +42,67 @@
       opacity: 100;
     }
   }
+
+  @keyframes Card{
+
+    0%{
+        transform: scale(1);
+    }
+
+    60%{
+        transform: scale(.6) translate(-100px, -100px);
+    }
+    70%{
+        transform: scale(.8) translate(-100px, -100px);
+    }
+    80%{
+        transform: scale(.6) translate(-100px, -100px);
+    }
+    100%{
+        transform: scale(.6) translate(-600px, -400px);
+    }
+
+
+  }
+
+  @keyframes Phone{
+
+    0%{
+        transform: rotate(-30deg) translate(300px,400px) scale(1.4);
+    }
+    
+    40%{
+        transform: rotate(-30deg) translate(50px, 60px);
+
+    }
+    60%{
+        transform: scale(.8) rotate(-30deg) translate(50px, 60px);
+
+    }
+    80%{
+        transform: scale(1);
+
+    }
+    99%{
+        transform: scale(1);
+        opacity: 100;
+        display: flex;
+    }
+
+    100%{
+        transform: scale(1);
+        opacity: 100;
+        display: flex;
+    }
+
+
+  }
+
+  @keyframes Em {
+
+    
+    
+  }
   
 
 
@@ -52,6 +113,7 @@ html{
 }
 
 
+
 .Frame{
     margin-left: -10px;
     top: -10px;
@@ -60,6 +122,7 @@ html{
     background: linear-gradient(180deg, #2E2D4E 34%, #A6B2DD 100%);    display:flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 }
 
 .Title{
@@ -97,6 +160,9 @@ html{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
+    overflow: hidden;
+
 }
 
 .Card{
@@ -107,6 +173,50 @@ html{
     border-radius: 16px
 
 }
+
+.Phone{
+    height: 300px;
+    width: 150px;
+    border-radius: 25px;
+    border: 8px;
+    border-style: solid;
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: rotate(-30deg) translate(300px,400px) scale(1.4);
+    overflow: hidden;
+   
+   
+  
+    
+}
+
+.Phone_img{
+    width: 100%;
+
+}
+
+#Em{
+    
+    transform: scale(1);
+    opacity: 0;
+}
+
+
+.Notch{
+    width:80px;
+    height: 16px;
+    background-color: black;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    margin-top: -1px;
+    position:absolute;
+
+    
+}
+
+
 
 .Main_Text{
     display: flex;
@@ -170,19 +280,23 @@ html{
     text-align: center;
 }
 
+.Sides{
+    border-style: dashed;
+}
 
 
 
 
 
-/*  Animations */
+
+/*  Animations 
 
 .Title{
-    animation: FadeIn 5s normal; 
+    animation: FadeIn 4s normal; 
     animation-fill-mode: forwards;
 }
 .Title h1{
-    animation: Fade 2s normal forwards;
+    animation: Fade 1.5s normal forwards;
 }
 
 .Animation_Block, .Main_Text, .Dots, .Order{
@@ -191,3 +305,18 @@ html{
     animation-fill-mode: forwards;
 
 }
+
+*/
+
+.Card{
+    animation: Card 6s normal forwards;
+}
+.Phone{
+    animation: Phone 4s normal forwards;
+    animation-delay: 2s;
+
+}
+
+
+
+
