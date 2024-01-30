@@ -6,7 +6,6 @@
          url('Assets/Inter-Regular.woff') format('woff');
   }
   
- 
   @font-face {
     font-family: 'Inter-bold';
     font-style: normal;
@@ -14,6 +13,33 @@
     src: url('Assets/Inter-Bold.woff2') format('woff2'),
          url('Assets/Inter-Bold.woff') format('woff');
   }
+
+
+
+  @keyframes FadeIn {
+    0% {
+        
+        opacity: 0;
+    }
+    100%{
+      opacity: 100;
+    }
+  }
+  
+  @keyframes Fade {
+    0% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    100%{
+      opacity: 100;
+    }
+  }
+  
+
+
 
 html{
     background: linear-gradient(180deg, #2E2D4E 34%, #A6B2DD 100%);    display:flex;
@@ -139,3 +165,21 @@ html{
     text-align: center;
 }
 
+
+
+
+
+
+/*  Animations */
+
+.Title{
+    animation: FadeIn 2s normal; 
+    animation-fill-mode: forwards;
+}
+
+.Animation_Block, .Main_Text, .Order{
+    
+    animation: Fade 4s normal; 
+    animation-fill-mode: forwards;
+
+}
