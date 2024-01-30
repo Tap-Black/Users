@@ -18,11 +18,16 @@
 
   @keyframes FadeIn {
     0% {
-        
+        transform: translateY(200px);
         opacity: 0;
     }
-    100%{
+    60%{
       opacity: 100;
+      transform: translateY(200px);
+
+    }
+    100%{
+        transform: translateY(0px);
     }
   }
   
@@ -173,11 +178,14 @@ html{
 /*  Animations */
 
 .Title{
-    animation: FadeIn 2s normal; 
+    animation: FadeIn 5s normal; 
     animation-fill-mode: forwards;
 }
+.Title h1{
+    animation: Fade 2s normal forwards;
+}
 
-.Animation_Block, .Main_Text, .Order{
+.Animation_Block, .Main_Text, .Dots, .Order{
     
     animation: Fade 4s normal; 
     animation-fill-mode: forwards;
