@@ -116,6 +116,30 @@
     
     
   }
+
+  @keyframes circle {
+
+    0%{
+        opacity: 0;
+        transform: translate(300px,20px);
+    }
+    50%{
+        opacity: 100;
+        transform: translate(0px,0px);
+    }
+    70%{
+        transform: scale(.6);
+    }
+    90%{
+        transform: scale(1);
+        opacity: 100;
+    }
+    100%{
+        opacity: 0;
+    }
+
+    
+}
   
 
 
@@ -229,6 +253,17 @@ html{
     
 }
 
+.circle{
+    position:absolute;
+    border-radius: 50%;
+    width:30px;
+    height: 30px;
+    box-shadow: inset 0px 0px 4px 4px rgba(255, 255, 255, 0.636);
+    margin-top: 120px;
+    margin-left: 40px;
+
+}
+
 
 
 .Main_Text{
@@ -302,7 +337,7 @@ html{
 
 
 
-/*  Animations */
+/*  Animations */                                                                                          
 
 .Title{
     animation: FadeIn 4s normal; 
@@ -343,6 +378,21 @@ html{
     animation: Em 4s normal forwards;
     animation-delay: 13.5s;
 
+}
+
+
+
+
+
+
+.circle{
+    opacity: 0;
+    animation: circle 4s normal forwards;
+    animation-delay: 9.5                                    \          \                                    
+          
+           
+        \                    ;
+                                                                      
 }
 
 
