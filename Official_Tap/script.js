@@ -30,7 +30,7 @@ var currIndex = 0;
     header.textContent= Headers[currIndex];
     text.textContent= Texts[currIndex];
 
-        /* Iteration 1*/
+        /* Iteration 2*/
         setTimeout(function() {
             header.animate([
                 {opacity: "100"},
@@ -66,7 +66,7 @@ var currIndex = 0;
         },7500);
         
         
-        /* Iteration 1*/
+        /* Iteration 3*/
         setTimeout(function() {
             header.animate([
                 {opacity: "100"},
@@ -100,6 +100,42 @@ var currIndex = 0;
             header.textContent = Headers[currIndex];
             text.textContent = Texts[currIndex];
         },10500);
+
+
+        /* Iteration 3*/
+        setTimeout(function() {
+            header.animate([
+                {opacity: "100"},
+                {opacity: "0"},
+                {opacity: "100"}
+
+
+            ],{
+                duration: 1000,
+                fill:'forwards'
+            });
+            text.animate([
+                {opacity: "100"},
+                {opacity: "0"},
+                {opacity: "100"}
+
+
+            ],{
+                duration: 1000,
+                fill:'forwards'
+            });
+
+            D3.style.backgroundColor = "#1F1f1f";
+            D4.style.backgroundColor = "#C2E812";
+
+          }, 14000);
+           
+      
+        setTimeout(function(){
+            currIndex++;
+            header.textContent = Headers[currIndex];
+            text.textContent = Texts[currIndex];
+        },14 500);
     
         
 
