@@ -273,18 +273,16 @@ html{
     justify-content: center;
 }
 .Main_Text h2{
-    font-size: 40px;
+    font-size: 34px;
     text-align: center;
+    font-weight: 600;
+    color: #1f1f1f;
     
-    background: -webkit-linear-gradient(#1f1f1f, #1f1f1f00);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; color: rgba(0, 0, 0, 0); -webkit-text-stroke: .75px black;
-    margin-bottom: 0px;
 }
 
 .Main_Text h4{
     color:white;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 1.89px;
     font-size: 18px;
     text-align: center;
