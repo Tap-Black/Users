@@ -9,15 +9,15 @@
 var Headers = [
     "One Card",
     "Simply Tap",
-    "Connect ",
+    "Connect",
     "Endless Possibilites"
 ]
 
 var Texts = [
     "The perfect way to keep in touch with clients, mentors, or new friends.",
-    "Tap your card on the phone to send your information.",
-    "Connect other to your network through your TapPage.",
-    "Connect your socials, emails, or webpage to instantly build your network."
+    "Tap your card on the phone of whoever you meet.",
+    "Connect others to your network through your TapPage.",
+    "Choose how you want them to engage. Whether through social media or LinkedIn, you are now instantly connected!"
 ]
 
 var currIndex = 0;
