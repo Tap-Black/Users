@@ -223,14 +223,16 @@ function fadeIn(variable){
         fill: 'forwards', // Animation fill mode
 
     }).finished.then(function() {
-        variable.style.display = "block";
+        variable.style.display = "flex";
 
     });
 
 }
 
 
-
+var Actual = document.querySelector(".Form");
+var CashApp = document.querySelector(".Payment");
+var Submit = document.getElementById("Submit");
 
 
 $(function(){
@@ -238,18 +240,28 @@ $(function(){
     $('.Order-Box').click(function(){
 
         var DesignPick = Designs[T_index-1].getAttribute('id');
-        console.log(DesignPick);
+
+        var Selection = document.getElementById("Selection");
+        Selection.value = DesignPick;
+        console.log(Selection.value);
+
+        var H1 = document.querySelector("#page1");
+        var H2 = document.querySelector("#page2");
 
         var Form = document.querySelector(".Secondary");
         var Border = document.querySelector(".Border");
         var Dots = document.querySelector(".Dots");
         var OrderButton = document.querySelector(".Pick");
+        
+
 
         fadeAway(Border);
         fadeAway(Dots);
         fadeAway(OrderButton);
+        fadeAway(H1);
 
         fadeIn(Form);
+        fadeIn(H2);
     
 
     });
@@ -308,3 +320,25 @@ $(function(){
 
 
 });
+
+
+function SubForm (){
+    $.ajax({
+        url:'https://api.apispreadsheets.com/data/iVxAM2hDnF85Qmn2/',
+        type:'post',
+        data:$(".Form").serializeArray(),
+        success: function(){
+          alert("Form Data Submitted :)")
+        },
+        error: function(){
+          alert("There was an error :(")
+        }
+    });
+
+    fadeAway(Actual);
+    fadeIn(CashApp);
+    fadeAway(Submit);
+
+
+
+}

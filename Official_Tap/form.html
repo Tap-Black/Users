@@ -12,7 +12,8 @@
     <div class="Frame">
 
         <div class="Choose">
-            <h1>Pick a Template</h1>
+            <h1 id="page1">Pick a Template</h1>
+            <h1 id="page2">Build Your Card</h1>
         </div>
         <div class="Border">
 
@@ -57,30 +58,66 @@
   
           </div>
 
+
+
+
+          <!--      Form        -->
+
           <div class="Secondary">
           <form class="Form">
-            <label>Full Name / Business Name</label>
+
+            <h3>Contact Info</h3>
+            <div class="row1">
+            <input name="full_name" placeholder="Full Name/Business Name"/>
+            <input name="phone" placeholder="Phone # "/>
+            <input name="email" placeholder="Email" />
+          </div>
+            
+            
+            <br>            
+            <p>Please provide the links you would like on your TapPage.
+              These can be your Instagram, LinkedIn, Facebook, etc.
+              <br><br/>Format: Instagram: https://www.instagram.com/tapblack._?igsh=bnhoZmcyaXdmM2Jv&utm_source=qr
+            </p>
             <br/>
-            <input name="full_name" />
+
+            <div class="LinksHere">
+            <input name="link1" placeholder="Link 1" required/>
+
+            <input name="link2" placeholder="Link 2" />
+            <input name="link2" placeholder="Link 2" />
+            <input name="link4" placeholder="Link 4" />
+
+          </div>
             <br/>
-            <label>Email</label>
+
+            <label>Any Color Preferences for your TapPage?</label>
+            <input name="color"/>
             <br/>
-            <input name="email" />
-            <br/>
-            <label>Age</label>
-            <br/>
-            <input type="radio" id="age" name="age" value="18-35" /> 18-35<br/>
-            <input type="radio" id="age" name="age" value="35+" /> 35+<br/>
-            <br/>
-            <label>Message</label>
-            <br/>
-            <textarea name="message">
-            </textarea>
-            <br/>
-            <br/>
+
+            <input name="design" id="Selection"/>
+            
+
           </form>
-          <button onclick="SubForm()">Submit</button>
-  
+
+          <button onclick="SubForm()" id="Submit">Submit</button>
+
+          <div class="Payment">
+          <h3>Your Order has been submitted. Please choose a Payment Option. Thank you so much for supporting us!</h3>
+
+          <div class="CashApp">
+
+            <a id="PayNow" href="https://cash.app/$officialmarshall/30.00/" target="_blank">
+      
+            <img src="Assets/cashApp_logo.png"/>
+            <h4>Cash App Pay</h4>
+          </a>
+      
+        </div>
+
+      </div>
+
+
         </div>
   
         
