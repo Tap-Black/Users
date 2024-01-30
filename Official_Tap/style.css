@@ -336,6 +336,15 @@ html{
     border-style: dashed;
 }
 
+.Tap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Tap h4{
+    color: #1f1f1f;
+
+}
 
 
 
